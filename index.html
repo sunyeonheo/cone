@@ -117,14 +117,14 @@
         // 2. 해당 사진을 찾아 hideText class를 지워주고, showText는 삽입해줌
         function showText(number) {
             if (number === 1) {
-                document.querySelector("#desc1").classList.remove("hideText");
-                document.querySelector("#desc1").classList.add("showText");
+                document.querySelector("#disc1").classList.remove("hideText");
+                document.querySelector("#disc1").classList.add("showText");
             } else if (number === 2) {
-                document.querySelector("#desc2").classList.remove("hideText");
-                document.querySelector("#desc2").classList.add("showText");
+                document.querySelector("#disc2").classList.remove("hideText");
+                document.querySelector("#disc2").classList.add("showText");
             } else {
-                document.querySelector("#desc3").classList.remove("hideText");
-                document.querySelector("#desc3").classList.add("showText");
+                document.querySelector("#disc3").classList.remove("hideText");
+                document.querySelector("#disc3").classList.add("showText");
             }
         }
 
@@ -133,14 +133,14 @@
         // 2. 해당 사진을 찾아 shotText class를 지워주고, hideText는 삽입해줌
         function hideText(number) {
             if (number === 1) {
-                document.querySelector("#desc1").classList.remove("showText");
-                document.querySelector("#desc1").classList.add("hideText");
+                document.querySelector("#disc1").classList.remove("showText");
+                document.querySelector("#disc1").classList.add("hideText");
             } else if (number === 2) {
-                document.querySelector("#desc2").classList.remove("showText");
-                document.querySelector("#desc2").classList.add("hideText");
+                document.querySelector("#disc2").classList.remove("showText");
+                document.querySelector("#disc2").classList.add("hideText");
             } else {
-                document.querySelector("#desc3").classList.remove("showText");
-                document.querySelector("#desc3").classList.add("hideText");
+                document.querySelector("#disc3").classList.remove("showText");
+                document.querySelector("#disc3").classList.add("hideText");
             }
         }
 
@@ -160,7 +160,7 @@
             onmouseout="showText(1)"
             onclick="alertText(1)">
                 <span id="disc1" class="photo-description">
-                    2016.03.23 서울패션위크
+                    2016.03.23<br>서울패션위크
                 </span>
             </div>
             <div id="image2" class="photo-frame"
@@ -168,7 +168,7 @@
             onmouseout="showText(2)"
             onclick="alertText(2)">
                 <span id="disc2" class="photo-description">
-                    2018.03.31 강화 케이팝 콘서트
+                    2018.03.31<br>강화 케이팝 콘서트
                 </span>
             </div>
             <div id="image3" class="photo-frame"
@@ -176,17 +176,18 @@
             onmouseout="showText(3)"
             onclick="alertText(3)">
                 <span id="disc3" class="photo-description">
-                    2023년 배우 프로필 사진
+                    2023년<br>배우 프로필 사진
                 </span>
             </div>
             <div class="photo-frame">
-                <iframe src="https://www.youtube.com/embed/Kf-91K13C2M" rameborder="0" class="video">
+                <iframe src="https://www.youtube.com/embed/Kf-91K13C2M"
+                rameborder="0" class="video">
                 </iframe>
             </div>
         </div>
         <div class="footer">
             <p class="f-title">SUNGJAE Time</p>
-            <p class="f-date">2023. 02. 02</p>
+            <p class="f-date">2023. 05. 02</p>
         </div>
     </div>
 </body>
